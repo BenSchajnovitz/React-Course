@@ -1,0 +1,24 @@
+.my-btn{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.submit-button{
+    box-shadow: 5px 10px mediumaquamarine;
+    color: whitesmoke;
+    background-color: mediumblue;
+
+    &:hover{
+        background-color: darken($color: mediumblue, $amount: 20%);
+    }
+}
+
+.clear-button{
+    box-shadow: 5px 10px  wheat;
+    color: black;
+    background-color: darksalmon;
+
+    &:hover{
+    background-color: darken($color: darksalmon, $amount: 20%);
+    }
+}
