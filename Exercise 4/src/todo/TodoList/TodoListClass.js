@@ -4,6 +4,14 @@ import GetData from '../services/GetTodoListService';
 
 export class TodoListClass extends React.Component{
 
+    static propTypes ={
+        isVisible: PropTypes.bool
+    }
+
+    static defaultProps ={
+        isVisible: false
+    }
+
     state = {
         listData: null,
         isListLoaded: false
@@ -70,12 +78,4 @@ export class TodoListClass extends React.Component{
             </>
         )
     }
-};
-
-TodoListClass.propTypes = {
-    isVisible: PropTypes.bool
-};
-
-TodoListClass.defaultProps = {
-    isVisible: false
 };
