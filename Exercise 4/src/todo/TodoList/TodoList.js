@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
-import GetData from './services/GetTodoListService';
+import GetData from '../services/GetTodoListService';
 
-export default function TodoList(props){
+export function TodoList(props){
 
     const [listData, setListData] = useState(null);
     const [isListLoaded, setIsListLoaded] = useState(false);

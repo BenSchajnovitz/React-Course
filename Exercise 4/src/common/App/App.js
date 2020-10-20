@@ -1,12 +1,12 @@
 import React from 'react';
-import TodoListClass from '../../TodoList/TodoListClass';
-import TodoList from '../../TodoList/TodoList';
+import {TodoClass} from '../../todo';
+import {Todo} from '../../todo';
 
 function App() {
   return (
     <>
-      <TodoListClass />,
-      <TodoList isVisible={true} />
+      <TodoClass />,
+      <Todo isVisible={true} />
     </>
   );
 }

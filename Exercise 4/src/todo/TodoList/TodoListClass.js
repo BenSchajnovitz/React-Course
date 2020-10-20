@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import GetData from './services/GetTodoListService';
+import GetData from '../services/GetTodoListService';
 
-export default class TodoListClass extends React.Component{
+export class TodoListClass extends React.Component{
 
     state = {
         listData: null,
